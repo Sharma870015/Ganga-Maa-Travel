@@ -1,0 +1,121 @@
+/* General Styles for the Packages Section */
+.packages {
+    padding: 4rem 2rem;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Container for the Package Cards */
+.packages-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Individual Package Card Styles */
+.package-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px; /* Limit the max width */
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Heading for Each Package Card */
+.package-card h3 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Text in Package Card */
+.package-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+/* List of Facilities */
+.package-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Each Facility Item */
+.package-card ul li {
+    background-color: #f0f4f8;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Button in Each Package */
+.package-card a {
+    display: inline-block;
+    margin-top: auto;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.package-card a:hover {
+    background-color: #ff4500;
+}
+
+/* Hover Effect for Card */
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .packages-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .package-card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .packages-container {
+        justify-content: space-evenly;
+    }
+
+    .package-card {
+        max-width: 300px;
+    }
+}

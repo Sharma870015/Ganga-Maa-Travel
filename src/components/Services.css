@@ -1,0 +1,148 @@
+.services {
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service-item {
+    text-align: center;
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .additional-info {
+    margin-top: 30px;
+  }
+  
+  /* Car, Hotel, and Food item styling */
+  .hotel-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  .for-carList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .hotel-item {
+    flex: 1 1 calc(20% - 20px); /* 5 items per row, each taking 20% width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .car-item{
+    flex: 1 1 calc(20% - 20px); /* 5 items per row, each taking 20% width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .car-img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  p {
+    margin: 10px 0 5px;
+  }
+
+  /* Hotel Section */
+
+  .hotel-item {
+    flex: 1 1 calc(20% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .main-img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .hotel-item {
+      flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    }
+    .car-item{
+      flex: 1 1 calc(25% - 20px);
+    }
+    .food-item{
+      flex: 1 1 calc(25% - 20px);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .hotel-item {
+      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+    .car-item{
+      flex: 1 1 calc(33.33% - 20px);
+    }
+    .food-item{
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hotel-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+    .car-item{
+      flex: 1 1 calc(50% - 20px);
+    }
+    .food-item{
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .hotel-item {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row */
+    }
+    .car-item{
+      flex: 1 1 calc(100% - 20px);
+    }
+    .food-item{
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+
+  /* Food items */
+
+  .food-Variety {
+    height: 150px;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .food-item {
+    
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+  }
